@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            
+            //2 задание
             int a = 3;
             int b = 5;
 
@@ -16,6 +16,17 @@
             Console.WriteLine(a+"\t"+b);
         }
 
+        //3 задание
+        public static bool CheckString(string inp)
+        {
+            string nums = "1234567890";
+            foreach (var c in inp)
+                if (!nums.Contains(c))
+                    Console.Writeline("Ошибка ввода!");
+
+            return true;
+        }
+        
         public static void Swap(int[] array, int index1, int index2)
         {
             int temp = array[index1];
